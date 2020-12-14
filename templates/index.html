@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <title> GEOCODER</title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+        <body>
+            <div class="container">
+                <h1> Address geocoder</h1>
+                <h3> Please upload .csv file with column Address!!!</h3>
+                <form action="{{url_for('success_table')}}" method="POST" enctype="multipart/form-data"> <!-- success_table triggers function -->
+                        <input type = "file" name = "file" accept=".csv" />
+                        <button type = "submit"> Submit </button> 
+                    </form>
+            <div class="output">
+                {{text|safe}}
+                {% if btn %}
+                    {% include btn %}
+                {% endif %}
+            </div>
+        </body>
+</html>
