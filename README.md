@@ -7,4 +7,4 @@ Usage:<br>
 
 Ready for upload to HEROKU!
 
-![Screenshot](pic.PNG)
+![Screenshot](pic.png)

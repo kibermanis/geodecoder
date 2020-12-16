@@ -6,10 +6,6 @@ import pandas, datetime
 
 app=Flask(__name__)
 
-# app.config['UPLOAD_FOLDER']='/uploads'
-# app.config['MAX_CONTENT_PATH']=10000000 # 10MB in bytes
-
-
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -36,5 +32,5 @@ def download():
     return send_file(filename, attachment_filename='yourfile.csv', as_attachment=True)
 
 if __name__=='__main__':
-    app.debug= True
+    app.debug= False
     app.run()
