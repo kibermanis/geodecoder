@@ -32,5 +32,4 @@ def download():
     return send_file(filename, attachment_filename='yourfile.csv', as_attachment=True)
 
 if __name__=='__main__':
-    app.debug= False
     app.run()
