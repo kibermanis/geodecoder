@@ -7,4 +7,4 @@ Usage:<br>
 
 
 
-![Screenshot](pic.png)
+![Screenshot](pic.PNG)
